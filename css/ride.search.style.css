@@ -1,0 +1,588 @@
+    /* actual css */
+
+    body {
+        background-color:rgba(62.00000010430813, 7.000000057742, 99.00000169873238, 1);
+        margin: 0rem;
+        font-family: Poppins;
+      }
+
+/*-----------------uptill here------------adith---------------------------------------------------------*/
+    
+    /* Frame 75 */
+    .white-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    max-width:100%;
+    height: 136px;
+    top: 60px;
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.36);
+    }
+        /* Frame 74 */
+    .purple-block{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: left;
+        position: relative;
+        width: 100%;
+        height: 70px;
+        margin:30px;
+        background: linear-gradient(0deg, #310159, #310159), #FFFFFF;
+        mix-blend-mode: normal;
+        box-shadow: 0px 0px 12px 1px rgba(194, 17, 161, 0.8);
+        border-radius: 18px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        gap: 10px;
+    }
+/* ------------------From-frame -------------------------------------*/
+    .from-container{
+
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        box-sizing: border-box;
+        margin-top: 13px;
+        margin-left: 39px;
+        position: relative;
+        width: 225px;
+        height: 45px;
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 12px;
+        gap: 1px;
+    }
+    .vector-img-from{
+        justify-content: left;
+        margin-left: 15px;
+        margin-top: 7px;
+    }
+    .from-text{
+        justify-content: center;
+        margin-left: 10px;
+        margin-top: 14px;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+/*-----------------------------Swap button here--------------------*/
+    .swap{
+        justify-content: center;
+        margin-top: 23px;
+    }
+/*----------------------------------------------------------------------------------*/
+
+    .to-container{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        box-sizing: border-box;
+        margin-top: 13px;
+
+        position: relative;
+        width: 225px;
+        height: 45px;
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 12px;
+        gap: 1px;
+    }
+    .vector-img-to{
+        justify-content: left;
+        margin-left: 15px;
+        margin-top: 7px;
+    }
+    .to-text{
+        justify-content: center;
+        margin-left: 10px;
+        margin-top: 14px;
+        border: none;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+/*----------------------------------------------------------------------------------*/
+    .person-container{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        box-sizing: border-box;
+        margin-top: 13px;
+        margin-left: 17px;
+        position: relative;
+        width: 225px;
+        height: 45px;
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 12px;
+        gap: 1px;
+    }
+    .vector-img-person{
+        justify-content: left;
+        margin-left: 10px;
+        margin-top: 7px;
+    }
+    .numberOfPeople{
+        justify-content: center;
+        margin-left: 10px;
+        margin-top: 14px;
+        border: none;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+    /*----------------------------------------------------------------------------------*/
+    .date-container{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        box-sizing: border-box;
+        margin-top: 13px;
+        margin-left: 17px;
+        position: relative;
+        width: 225px;
+        height: 45px;
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 12px;
+        gap: 1px;
+
+    }
+    .vector-img-calender{
+        justify-content: left;
+        margin-left: 13px;
+        margin-top: 9px;
+    }
+    .datetime{
+        justify-content: center;
+        margin-left: 10px;
+        margin-top: 12px;
+        border: none;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+    /*----------------------------------------------------------------------*/
+    .search-button{
+        display: flex;
+        position: relative;
+        box-sizing: border-box;
+        margin-top: 13px;
+        margin-left: 11px;
+        margin-right: 1px;
+        position: relative;
+        width: 150px;
+        height: 45px;
+        background: #C211A1;
+        border: 1px solid #000000;
+        border-radius: 12px;
+    }
+    .search{
+        background: none;
+        border: none;
+        justify-content: center;
+        margin-top: 0px;
+        margin-left:1px;
+        width: 150px;
+        height: 45px;
+    }
+    .search:hover{
+        cursor: pointer;
+        color: white;
+    }
+    /*----------------------------------------------------------------------*/
+    .horizontal-list{
+        margin-block-end: 0em;
+        margin-block-start: 0em;
+        padding-inline-start: 10px;
+        display: block;
+        list-style: auto
+    }
+    .horizontal-list li{
+        justify-content: center;
+        list-style: none;
+        display: inline-block;
+        margin-top: 60px;
+        margin-bottom: 0px;
+        padding: 0 2rem;
+        flex-direction: row;
+        flex-shrink: 0;
+        color: #ffffffd9;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: thin;
+        font-weight: 30;
+        line-height: normal;
+    }
+    .Filter{
+        margin-left: 120px;
+        margin-right: 100px;
+    }
+    .Public{
+        margin-left: 120px;
+        margin-right: 18px;
+    }
+    .Rental{
+        margin-left: 120px;
+        margin-right: 10px;
+    }
+    .Sharing{
+    margin-left: 109px;
+    }
+    /*----------------------------------------------------------------------*/
+.icons-container{
+    margin-top: -8px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 20px;
+}
+.menu{
+    margin-left: 140px;
+    border-radius: 18px;
+    display: inline-flex;
+    justify-content: center;
+    width: 72px;
+    height: 20px;
+    padding: 18.029px 18px 18px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.72);
+    background: transparent;
+}
+.Filter-image{
+    width: 36px;
+    height:36px;
+    margin-top: -9px;
+}
+.PT{
+    margin-left: 200px;
+    border-radius: 18px;
+    display: inline-flex;
+    justify-content: center;
+    width: 82px;
+    height: 20px;
+    padding: 18.029px 18px 18px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.72);
+    background: linear-gradient(0deg, #310159 0%, #310159 100%), #FFF;  
+    box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.80);
+}
+.PT::after{
+    box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.80);
+}
+.Tram-image{
+    width: 36px;
+    height:36px;
+    margin-top: -9px;
+    margin-right: 3px;
+}
+.Bus-image{
+    width: 36px;
+    height:36px;
+    margin-top: -9px;
+}
+.RT{
+    margin-left: 75px;
+    border-radius: 18px;
+    display: inline-flex;
+    justify-content: center;
+    width: 82px;
+    height: 20px;
+    padding: 18.029px 18px 18px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.72);
+    background: linear-gradient(0deg, #310159 0%, #310159 100%), #FFF;
+}
+.RT:hover{
+    box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.80);
+    cursor: pointer;
+}
+.Uber-image{
+    width: 36px;
+    height:36px;
+    margin-top: -9px;
+    margin-right: 10px;
+}
+.Taxi-image{
+    width: 36px;
+    height:36px;
+    margin-top: -9px;
+}
+.RS{
+    margin-left: 75px;
+    border-radius: 18px;
+    display: inline-flex;
+    justify-content: center;
+    width: 82px;
+    height: 20px;
+    padding: 18.029px 18px 18px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.72);
+    background: linear-gradient(0deg, #310159 0%, #310159 100%), #FFF;
+}
+.RS:hover{
+    box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.80);
+    cursor: pointer;
+}
+.Sharing-image{
+    width: 36px;
+    height:36px;
+    margin-top: -9px;
+}
+/*-------------------------------------------------------------------------*/
+.sidenav {
+    width: 200px;
+    position: relative;
+    z-index: 1;
+    top: 6vh;
+    left: 90px;
+    border: #ffffff;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+.fieldclr{
+    color: #FFFFFF;
+}
+  .overflow-auto {
+    z-index: 1;
+    margin-top: -10vh;
+    margin-left: 300px; /* Same width as the sidebar + left position in px */
+    max-width: 60rem;
+    width: 80rem;
+    padding: 0px 10px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0px;
+    list-style: none;
+    padding: 25px 0px;
+    gap: 30px;
+    color: #FFFFFF;
+  }
+  
+  
+  .card:hover {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.15);
+  }
+  
+  .card .card-title {
+    font-size: 20px;
+  }
+  
+  .card .card-content {
+    margin: 20px 0;
+    max-width: 85%;
+  }
+  
+  .card .card-link-wrapper {
+    margin-top: auto;
+  }
+  
+  .card .card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #C211A1;
+    padding: 6px 12px;
+    border-radius: 8px;
+  }
+  
+  .card:hover .card-link {
+    color: #000000;
+  }
+  .card_2{
+    padding-top: 18rem;
+  }
+  .card_3{
+    padding-top: 2rem;
+  }
+  .textBelow{ 
+    height: 64px; 
+    margin-left: -190px;
+    padding: 1rem 1rem;
+    color: #CACACA; 
+    font-size: 18px; 
+    font-family: Poppins; 
+    font-weight: 400; 
+    word-wrap: break-word;
+  }
+  .textBelowhere{
+    height: 64px; 
+    margin-left: 10px;
+    margin-top: 65rem;
+    padding: 1rem 1rem;
+    color: #CACACA; 
+    font-size: 18px; 
+    font-family: Poppins; 
+    font-weight: 400; 
+    word-wrap: break-word;
+  }
+  /* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    margin-top: 1.8rem;
+    margin-left: -13rem;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 8px;
+    width: 65rem;
+    border: 1px solid;
+    text-align: left;
+    font-size: 27px;
+  }
+  .collapsiblee {
+    margin-top: 1.8rem;
+    margin-left: -13rem;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 8px;
+    width: 65rem;
+    border: 1px solid;
+    text-align: left;
+    font-size: 27px;
+  }
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active{
+    padding: 1.8rem;
+  } 
+  .collapsible:hover {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.15);
+ 
+  }
+  .collapsiblee:hover {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.15);
+  }
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    color: #FFFFFF;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+  }
+  .collapsible:after {
+    color: rgb(255, 255, 255);
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 20px;
+    float: right;
+    margin-left: 5px;
+  }
+  .collapsiblee:after {
+    color: rgb(255, 255, 255);
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 20px;
+    float: right;
+    margin-left: 5px;
+  }
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+  .horizontal-list-1{
+    justify-content: center;
+    padding-inline-start: 10px;
+
+    list-style: auto
+}
+.horizontal-list-1 li{
+    justify-content: center;
+    list-style: none;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 10rem;
+    margin-bottom: 0px;
+    flex-direction: row;
+    color: #ffffffd9;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: thin;
+    font-weight: 30;
+    line-height: normal;
+}
+.horizontal-list-1 .Public{
+    margin-left: 26rem;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+.Rentall{
+    margin-left: 90px;
+}
+.Sharingg{
+margin-left: 100px;
+}
+.icons-container-1{
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    margin-left: 12rem;
+    margin-top: -1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (min-width: 300px) and (max-width: 800px) {
+    .white-block{
+        position: relative;
+        height: 20rem;
+    }
+    .purple-block{
+        justify-content: center ;
+        height: 15rem;
+    }
+    .from-container{
+        margin-left: 4.3rem;
+        margin-top: 2rem;
+    }
+    .swap{
+        margin-left: 1rem;
+        margin-top: 2.5rem;
+    }
+    .to-container{
+        margin-left: 1rem;
+        margin-top: 1.9rem; 
+    }
+    .person-container{
+        margin-left: 4.3rem;
+        margin-top: -2rem;
+    }
+    .date-container{
+        margin-left: 4.2rem;
+        margin-top: -2rem;
+    }
+    .search-button{
+        margin-left: 4.2rem;
+        margin-top: -1rem;
+        width: 32.9rem;
+    }
+    .search{
+        margin-left: 12.5rem;
+        color: #ffffff;
+    }
+    .horizontal-list{
+        margin-top: 1rem;
+    }
+    .horizontal-list .Filter{
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+.sidenav{
+    display: none;
+}
+.overflow-auto{
+    margin-left: 1rem;
+}
+.textBelow{ 
+    margin-left: 1rem;
+}
+.Frame122{
+width: 22rem;
+}
+  }

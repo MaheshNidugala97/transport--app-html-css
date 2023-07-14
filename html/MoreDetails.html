@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Go Route</title>
+  <link rel="stylesheet" href="../css/ride.search.style.css">
+</head>
+
+<body>
+  <!-- White Block section starts here -->
+  <div class="white-block">
+    <div class="purple-block">
+      <div class="from-container">
+        <div class="vector-img-from">
+          <img src="../images/Icon_Location.png" alt="Location Icon" />
+        </div>
+        <div class="from-input">
+          <input type="text" class="from-text" placeholder="From" required>
+        </div>
+      </div>
+
+      <div class="swap-button">
+        <input type="image" src="../images/swap.png" alt="Location Icon" class="swap" width="26" height="26">
+      </div>
+
+      <div class="to-container">
+        <div class="vector-img-to">
+          <img src="../images/Icon_Location.png" alt="Location Icon" />
+        </div>
+        <div class="To-input">
+          <input type="text" class="to-text" placeholder="To" required>
+        </div>
+      </div>
+
+      <div class="person-container">
+        <div class="vector-img-person">
+          <img src="../images/Person.png" alt="Person Icon" />
+        </div>
+        <div class="passengers-input">
+          <input type="number" class="numberOfPeople" name="people" step="1" placeholder="No. of passengers :">
+        </div>
+      </div>
+
+      <div class="date-container">
+        <div class="vector-img-calender">
+          <img src="../images/date.png" alt="Date Icon" />
+        </div>
+        <div class="dateAndtime-input">
+          <input type="datetime-local" class="datetime" placeholder="Date & Time :">
+        </div>
+      </div>
+      <div class="search-button">
+        <input type="button" class="search" value="SEARCH">
+      </div>
+    </div>
+  </div>
+  <ul class="horizontal-list-1">
+    <li class="Public">
+      <p>Public</p>
+    </li>
+    <li class="Rentall">
+      <p>Rental</p>
+    </li>
+    <li class="Sharingg">
+      <p>Sharing</p>
+    </li>
+  </ul>
+  <div class="icons-container-1">
+    <div class="PT">
+      <a href="">
+        <img src="../images/tram.png" alt="Tram-Icon" class="Tram-image" />
+
+        <img src="../images/BUS.png" alt="Bus-Icon" class="Bus-image" />
+      </a>
+    </div>
+    <a href=""></a>
+    <div class="RT">
+      <img src="../images/Uber.png" alt="Uber" class="Uber-image" />
+
+      <img src="../images/Taxi.png" alt="Taxi-Icon" class="Taxi-image" />
+    </div></a>
+    <a href=""></a>
+    <div class="RS">
+      <img src="../images/Sharing.png" alt="Sharing" class="Sharing-image" />
+    </div></a>
+  </div>
+  <!-- Main Container Starts here -->
+  <div class="Group10" style="width: 137.15px; height: 50.57px; position: relative; justify-content: center;">
+    <div class="Frame124"
+      style="justify-content: center; width: 95.75px; height: 47.42px; padding-top: 932.62px; padding-bottom: 60.06px; padding-left: 280.74px; padding-right: 680.89px; left: 96.40px; top: 20px; position: absolute; background: linear-gradient(0deg, #310159 0%, #310159 100%); box-shadow: 0px 0px 14px rgba(255, 255, 255, 0.80); border-radius: 18px; justify-content: flex-start; align-items: center; display: inline-flex">
+      <div class="Frame119"
+        style="width: 84px; align-self: stretch; left: -10px;padding-left: 99px; padding-right: 99px; padding-top: 21px; padding-bottom: 21px; background: #F7F7F7; border-radius: 18px; border: 0.50px #FF63CE solid; justify-content: center; align-items: center; gap: 20px; display: inline-flex">
+        <a href="RideSearch.html">
+          <div class="Back"
+            style="color: #D643BF; font-size: 22px; font-family: Poppins; font-weight: 600; word-wrap: break-word">Back
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="StrRnv"
+      style="width: 117px; height: 44px; left: 190.88px; top: 64px; position: absolute; color: white; font-size: 19px; font-family: Poppins; font-weight: 600; word-wrap: break-word">
+      STR - RNV </div>
+    <div class="10Am"
+      style="width: 96px; height: 31px; left: 563px; top: 347px; position: absolute; color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word">
+      9:10 am</div>
+    <div class="55Am"
+      style="width: 89px; height: 31px; left: 863px; top: 347px; position: absolute; color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word">
+      9:55 am</div>
+    <div class="15Hrs"
+      style="width: 72px; height: 31px; left: 715px; top: 348px; position: absolute; color: rgba(255, 255, 255, 0.72); font-size: 20px; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+      0:15 hrs</div>
+    <div class="Line15"
+      style="width: 59.01px; height: 0px; left: 640.99px; top: 360px; position: absolute; border: 0.50px white solid">
+    </div>
+    <div class="Line16"
+      style="width: 59px; height: 0px; left: 794px; top: 360px; position: absolute; border: 0.50px white solid"></div>
+    <div class="TransferDuration7Mins"
+      style="width: 268px; height: 31px; left: 655px; top: 566px; position: absolute; color: rgba(255, 255, 255, 0.90); font-size: 20px; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+      Transfer Duration : 7 mins</div>
+    <div class="NeckerstadWestMannheim"
+      style="width: 241px; left: 484px; top: 391px; position: absolute; text-align: center; color: rgba(255, 255, 255, 0.81); font-size: 20px; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+      Neckerstad West, <br>Mannheim</br></div>
+    <div class="NeckerstadWestMannheimSrhCampusHeidelberg"
+      style="width: 669px; left: 202.04px; top: 155px; position: absolute; color: white; font-size: 21px; font-family: Poppins; font-weight: 500; word-wrap: break-word">
+      <u><B>Journey</u> :- </B> Neckerstad West, Mannheim -- SRH Campus, Heidelberg
+    </div>
+    <div class="FeudenheimEndstelleMannheim"
+      style="width: 209px; left: 201px; top: 400px; position: absolute; text-align: center; color: rgba(255, 255, 255, 0.90); font-size: 20px; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+      Feudenheim Endstelle,<br />Mannheim</div>
+    <div class="KurpfalzbrCkeMannheim"
+      style="width: 181px; left: 807px; top: 391px; position: absolute; text-align: center; color: rgba(255, 255, 255, 0.81); font-size: 20px; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+      Kurpfalzbrücke, Mannheim</div>
+    <div class="Tram"
+      style="width: 63px; height: 63px; left: 119.31px; top: 45px; position: absolute; background: rgba(255, 255, 255, 0.90); border-radius: 12px; overflow: hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 63" fill="none">
+        <g clip-path="url(#clip0_57_4331)">
+          <path
+            d="M35.2082 13.125L37.2394 9.1875H46.0415V5.25H18.9582V9.1875H31.8228L29.7915 13.125C21.3144 13.3613 13.5415 15.0413 13.5415 22.3125V44.625C13.5415 48.5625 16.5478 51.7913 20.4478 52.3688L17.2248 55.4925C16.3582 56.3325 16.954 57.75 18.1728 57.75H21.1248C21.4769 57.75 21.829 57.6188 22.0728 57.3563L27.0832 52.5H37.9165L42.9269 57.3563C43.1707 57.5925 43.5228 57.75 43.8748 57.75H46.8269C48.0457 57.75 48.6415 56.3325 47.7748 55.5187L44.5519 52.395C48.4519 51.7912 51.4582 48.5625 51.4582 44.625V22.3125C51.4582 15.0413 43.6853 13.3613 35.2082 13.125ZM32.4998 48.5625C30.2519 48.5625 28.4373 46.8037 28.4373 44.625C28.4373 42.4463 30.2519 40.6875 32.4998 40.6875C34.7478 40.6875 36.5623 42.4463 36.5623 44.625C36.5623 46.8037 34.7478 48.5625 32.4998 48.5625ZM46.0415 36.75H18.9582V23.625H46.0415V36.75Z"
+            fill="black" />
+        </g>
+        <defs>
+          <clipPath id="clip0_57_4331">
+            <rect width="65" height="63" rx="12" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+    <div class="Frame125"
+      style="width: 94px; align-self: stretch; padding-left: 86px; padding-right: 86px; padding-top: 16px; padding-bottom: 16px; left: 690px; top: 950px; position: absolute; background: #C211A1; border-radius: 18px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+      <a href="LoginAndRegister.html">
+        <div class="LogInPay"
+          style="color: white; font-size: 17px; font-family: Poppins; font-weight: 600; word-wrap: break-word">
+          log In & Pay
+        </div>
+      </a>
+    </div>
+    <div class="00" style="width: 43px; height: 31px; left: 1061.04px; top: 49px; position: absolute"><span
+        style="color: white; font-size: 23px; font-family: Poppins; font-weight: 400; word-wrap: break-word">.</span><span
+        style="color: #C211A1; font-size: 23px; font-family: Poppins; font-weight: 400; word-wrap: break-word">00</span>
+    </div>
+    <div
+      style="left: 1000.04px; top: 46px; position: absolute; text-align: center; color: #C211A1; font-size: 36px; font-family: Poppins; font-weight: 600; letter-spacing: 1.08px; word-wrap: break-word">
+      €</div>
+    <div
+      style="width: 56px; height: 40px; left: 1015.04px; top: 48px; position: absolute; text-align: center; color: #C211A1; font-size: 32px; font-family: Poppins; font-weight: 600; letter-spacing: 2.40px; word-wrap: break-word">
+      02</div>
+    <div class="Frame126"
+      style="width: 800px; height: 150px; left: 181px; top: 312px; position: absolute; border-radius: 18px; overflow: hidden; border: 0.50px #FF63CE solid">
+      <div class="Str2"
+        style="width: 70px; height: 44px; left: 120.96px; top: 36px; position: absolute; color: white; font-size: 19px; font-family: Poppins; font-weight: 600; word-wrap: break-word">
+        STR 2</div>
+      <div class="Line8"
+        style="width: 180px; height: 0px; left: 238px; top: 0px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 0.50px white solid">
+      </div>
+      <div class="Line9"
+        style="width: 180px; height: 0px; left: 324px; top: 0px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid">
+      </div>
+      <div class="Tram"
+        style="width: 45px; height: 45px; left: 69.96px; top: 23px; position: absolute; background: rgba(255, 255, 255, 0.90); border-radius: 12px; overflow: hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 65 63" fill="none">
+          <g clip-path="url(#clip0_57_4331)">
+            <path
+              d="M35.2082 13.125L37.2394 9.1875H46.0415V5.25H18.9582V9.1875H31.8228L29.7915 13.125C21.3144 13.3613 13.5415 15.0413 13.5415 22.3125V44.625C13.5415 48.5625 16.5478 51.7913 20.4478 52.3688L17.2248 55.4925C16.3582 56.3325 16.954 57.75 18.1728 57.75H21.1248C21.4769 57.75 21.829 57.6188 22.0728 57.3563L27.0832 52.5H37.9165L42.9269 57.3563C43.1707 57.5925 43.5228 57.75 43.8748 57.75H46.8269C48.0457 57.75 48.6415 56.3325 47.7748 55.5187L44.5519 52.395C48.4519 51.7912 51.4582 48.5625 51.4582 44.625V22.3125C51.4582 15.0413 43.6853 13.3613 35.2082 13.125ZM32.4998 48.5625C30.2519 48.5625 28.4373 46.8037 28.4373 44.625C28.4373 42.4463 30.2519 40.6875 32.4998 40.6875C34.7478 40.6875 36.5623 42.4463 36.5623 44.625C36.5623 46.8037 34.7478 48.5625 32.4998 48.5625ZM46.0415 36.75H18.9582V23.625H46.0415V36.75Z"
+              fill="black" />
+          </g>
+          <defs>
+            <clipPath id="clip0_57_4331">
+              <rect width="65" height="63" rx="12" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div class="Every10Mins"
+        style="width: 83.17px; height: 62.92px; left: 240px; top: 69.01px; position: absolute; text-align: center; color: rgba(255, 255, 255, 0.81); font-size: 15px; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+        Every<br />10 Mins.</div>
+      <div class="Vector"
+        style="width: 20px; height: 20px; left: 271px; top: 49px; position: absolute; background:none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#FF63CE">
+          <path
+            d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM12 13.7C11.5 14 10.9 13.8 10.6 13.3L9.1 10.5C9 10.3 9 10.2 9 10V5C9 4.4 9.4 4 10 4C10.6 4 11 4.4 11 5V9.7L12.4 12.3C12.6 12.8 12.5 13.4 12 13.7Z"
+            fill="#FF63CE" />
+        </svg>
+      </div>
+    </div>
+    <div class="Frame127"
+      style="width: 800px; height: 180px; left: 182.04px; top: 684px; position: absolute; border-radius: 18px; overflow: hidden; border: 0.50px #FF63CE solid">
+      <div class="Rnv5"
+        style="width: 70px; height: 44px; left: 120.96px; top: 35px; position: absolute; color: white; font-size: 19px; font-family: Poppins; font-weight: 600; word-wrap: break-word">
+        RNV 5</div>
+      <div class="Line8"
+        style="width: 180px; height: 0px; left: 238px; top: 0px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 0.50px white solid">
+      </div>
+      <div class="Line9"
+        style="width: 180px; height: 0px; left: 324px; top: 0px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 1px white solid">
+      </div>
+      <div class="AlterOegBahnhofWeinheim"
+        style="width: 190px; left: 30.96px; top: 99px; position: absolute; text-align: center; color: rgba(255, 255, 255, 0.90); font-size: 20px; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+        Alter OEG-Bahnhof,<br />Weinheim</div>
+      <div class="02Am"
+        style="width: 96px; height: 31px; left: 369px; top: 39px; position: absolute; color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word">
+        10:02 am</div>
+      <div class="32Am"
+        style="width: 96px; height: 31px; left: 673px; top: 39px; position: absolute; color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word">
+        10:32 am</div>
+      <div class="30Hrs"
+        style="width: 89px; height: 31px; left: 530.96px; top: 39px; position: absolute; color: rgba(255, 255, 255, 0.72); font-size: 20px; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+        0:30 hrs</div>
+      <div class="Line5"
+        style="width: 63px; height: 0px; left: 458.46px; top: 50px; position: absolute; border: 0.50px white solid">
+      </div>
+      <div class="Line6"
+        style="width: 60px; height: 0px; left: 605.96px; top: 50px; position: absolute; border: 0.50px white solid">
+      </div>
+      <div class="AbendakademieMannheim"
+        style="width: 227px; left: 300.96px; top: 89px; position: absolute; text-align: center; color: rgba(255, 255, 255, 0.81); font-size: 20px; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+        Abendakademie, <br>Mannheim</br></div>
+      <div class="SrhCampusHeidelberg"
+        style="width: 173px; left: 619.96px; top: 81px; position: absolute; text-align: center; color: rgba(255, 255, 255, 0.81); font-size: 20px; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+        SRH Campus, Heidelberg</div>
+      <div class="Tram"
+        style="width: 45px; height: 45px; left: 69.96px; top: 23px; position: absolute; background: rgba(255, 255, 255, 0.90); border-radius: 12px; overflow: hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 65 63" fill="none">
+          <g clip-path="url(#clip0_57_4331)">
+            <path
+              d="M35.2082 13.125L37.2394 9.1875H46.0415V5.25H18.9582V9.1875H31.8228L29.7915 13.125C21.3144 13.3613 13.5415 15.0413 13.5415 22.3125V44.625C13.5415 48.5625 16.5478 51.7913 20.4478 52.3688L17.2248 55.4925C16.3582 56.3325 16.954 57.75 18.1728 57.75H21.1248C21.4769 57.75 21.829 57.6188 22.0728 57.3563L27.0832 52.5H37.9165L42.9269 57.3563C43.1707 57.5925 43.5228 57.75 43.8748 57.75H46.8269C48.0457 57.75 48.6415 56.3325 47.7748 55.5187L44.5519 52.395C48.4519 51.7912 51.4582 48.5625 51.4582 44.625V22.3125C51.4582 15.0413 43.6853 13.3613 35.2082 13.125ZM32.4998 48.5625C30.2519 48.5625 28.4373 46.8037 28.4373 44.625C28.4373 42.4463 30.2519 40.6875 32.4998 40.6875C34.7478 40.6875 36.5623 42.4463 36.5623 44.625C36.5623 46.8037 34.7478 48.5625 32.4998 48.5625ZM46.0415 36.75H18.9582V23.625H46.0415V36.75Z"
+              fill="black" />
+          </g>
+          <defs>
+            <clipPath id="clip0_57_4331">
+              <rect width="65" height="63" rx="12" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div class="Every10Mins"
+        style="width: 83.17px; height: 62.92px; left: 240.96px; top: 69.01px; position: absolute; text-align: center; color: rgba(255, 255, 255, 0.81); font-size: 15px; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+        Every<br />10 Mins.</div>
+      <div class="Vector"
+        style="width: 20px; height: 20px; left: 271px; top: 49px; position: absolute; background: none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#FF63CE">
+          <path
+            d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM12 13.7C11.5 14 10.9 13.8 10.6 13.3L9.1 10.5C9 10.3 9 10.2 9 10V5C9 4.4 9.4 4 10 4C10.6 4 11 4.4 11 5V9.7L12.4 12.3C12.6 12.8 12.5 13.4 12 13.7Z"
+            fill="#FF63CE" />
+        </svg>
+      </div>
+    </div>
+    <div class="Line17-sideline"
+      style="width: 619px; height: 0px; left: 151.79px; top: 786px; position: absolute; transform: rotate(-89.97deg); transform-origin: 0 0; border: 1px #D1C9C9 solid">
+    </div>
+    <div class="Line18"
+      style="width: 26px; height: 0px; left: 154.04px; top: 397.50px; position: absolute; border: 1px #D1C9C9 solid">
+    </div>
+    <div class="Line19"
+      style="width: 26px; height: 0px; left: 154.04px; top: 580.49px; position: absolute; border: 1px #D1C9C9 solid">
+    </div>
+    <div class="Line20"
+      style="width: 26px; height: 0px; left: 154.04px; top: 249px; position: absolute; transform: rotate(-0.83deg); transform-origin: 0 0; border: 1px #D1C9C9 solid">
+    </div>
+    <div class="Line21"
+      style="width: 26px; height: 0px; left: 154.04px; top: 167px; position: absolute; transform: rotate(-0.83deg); transform-origin: 0 0; border: 1px #D1C9C9 solid">
+    </div>
+    <div class="Line22"
+      style="width: 26px; height: 0px; left: 154.04px; top: 784.50px; position: absolute; border: 1px #D1C9C9 solid">
+    </div>
+    <div class="TotalDuration" style="width: 509px; height: 39px; left: 202px; top: 235px; position: absolute"><span
+        style="color: rgba(255, 255, 255, 0.71); font-size: 20px; font-family: Poppins; font-weight: 400; word-wrap: break-word">Total
+        Duration : 0:45 </span><span
+        style="color: rgba(255, 255, 255, 0.71); font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word">|
+      </span><span
+        style="color: rgba(255, 255, 255, 0.71); font-size: 20px; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+        Today, Sat, 01/07/2023</span></div>
+    <div class="ChangeRequired"
+      style="width: 200px; height: 39px; left: 201.04px; top: 567px; position: absolute; color: rgba(255, 255, 255, 0.71); font-size: 20px; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+      1 Change required</div>
+  </div>
+
+  <div class="textBelowhere">
+    <p>*Note:- Based on your selected search parameters, connections are presented.On the main page, you may customize
+      them. Then, if any further connections exist, they will be displayed to you.</p>
+  </div>
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Go Route</title>
+  <link rel="stylesheet" href="../css/ride.search.style.css">
+  <link rel="script" href="script.js">
+
+</head>
+
+<body>
+  <!-- nav bar starts here -->
+
+  <!-- nav bar end here -->
+  <!-- White Block section starts here -->
+  <div class="white-block">
+    <div class="purple-block">
+      <div class="from-container">
+        <div class="vector-img-from">
+          <img src="../images/Icon_Location.png" alt="Location Icon" />
+        </div>
+        <div class="from-input">
+          <input type="text" class="from-text" placeholder="From" required>
+        </div>
+      </div>
+
+      <div class="swap-button">
+        <input type="image" src="../images/swap.png" alt="Location Icon" class="swap" width="26" height="26">
+      </div>
+
+      <div class="to-container">
+        <div class="vector-img-to">
+          <img src="../images/Icon_Location.png" alt="Location Icon" />
+        </div>
+        <div class="To-input">
+          <input type="text" class="to-text" placeholder="To" required>
+        </div>
+      </div>
+
+      <div class="person-container">
+        <div class="vector-img-person">
+          <img src="../images/Person.png" alt="Person Icon" />
+        </div>
+        <div class="passengers-input">
+          <input type="number" class="numberOfPeople" name="people" step="1" placeholder="No. of passengers :">
+        </div>
+      </div>
+
+      <div class="date-container">
+        <div class="vector-img-calender">
+          <img src="../images/date.png" alt="Date Icon" />
+        </div>
+        <div class="dateAndtime-input">
+          <input type="datetime-local" class="datetime" placeholder="Date & Time :">
+        </div>
+      </div>
+      <div class="search-button">
+        <input type="button" class="search" value="SEARCH">
+      </div>
+    </div>
+  </div>
+  <ul class="horizontal-list">
+    <li class="Filter">
+      <p>Filters</p>
+    </li>
+    <li class="Public">
+      <p>Public</p>
+    </li>
+    <li class="Rental">
+      <p>Rental</p>
+    </li>
+    <li class="Sharing">
+      <p>Sharing</p>
+    </li>
+  </ul>
+  <div class="icons-container">
+    <div class="menu">
+      <img src="../images/Menu.png" alt="Menu-Icon" class="Filter-image" />
+    </div>
+
+    <div class="PT">
+      <a href="">
+        <img src="../images/tram.png" alt="Tram-Icon" class="Tram-image" />
+
+        <img src="../images/BUS.png" alt="Bus-Icon" class="Bus-image" />
+      </a>
+    </div>
+    <a href=""></a>
+    <div class="RT">
+      <img src="../images/Uber.png" alt="Uber" class="Uber-image" />
+
+      <img src="../images/Taxi.png" alt="Taxi-Icon" class="Taxi-image" />
+    </div></a>
+    <a href=""></a>
+    <div class="RS">
+      <img src="../images/Sharing.png" alt="Sharing" class="Sharing-image" />
+    </div></a>
+  </div>
+  <!-- Side menu for filter starts here -->
+  <div>
+    <div class="sidenav">
+      <form>
+        <fieldset class="fieldclr">Sort by:<br>
+            <input type="radio" id="Time (earliest)" class="form-control" name="fav_language">
+            <label for="Time (earliest)">Time (earliest)</label><br>
+            <input type="radio" id="Price (low-high)" class="btn-radio" name="fav_language">
+            <label for="Price (low-high)">Price (low-high)</label><br>
+            <input type="radio" id="Price (high-low)" class="btn-radio" name="fav_language">
+            <label for="Price (high-low)">Price (high-low)</label><br>
+        </fieldset>
+      </form>
+    </div>
+    <!-- Main Container starts here -->
+    <div class="overflow-auto">
+      <!-- Card-1 starts here -->
+      <div class="Frame122"
+        style="width: 850.44px; height: 251.14px; position: relative; background: none, linear-gradient(0deg, #310159 0%, #310159 100%); border-radius: 18px; border: 0.50px rgba(255, 255, 255, 0.72) solid">
+        <a href="MoreDetails.html">
+          <div class="Frame93"
+            style="width: 39px; height: 32px; padding-left: 66px; padding-right: 66px; padding-top: 9px; padding-bottom: 9px; left: 655.82px; top: 180.20px; position: absolute; background: #C211A1; border-radius: 18px; justify-content: center; align-items: center; display: inline-flex">
+            <div class="MoreDetails"
+              style="color: white; font-size: 28px; font-family: Poppins; font-weight: 500; word-wrap: break-word">
+              Details
+            </div>
+        </a>
+      </div>
+      <div class="RnvStr"
+        style="width: 217px; height: 44px; left: 132.01px; top: 34.70px; position: absolute; color: white; font-size: 28px; font-family: Poppins; font-weight: 600; word-wrap: break-word">
+        RNV - STR </div>
+      <div class="10Am"
+        style="width: 96px; height: 31px; left: 90.64px; top: 121.78px; position: absolute; color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word">
+        9:10 am</div>
+      <div class="55Am"
+        style="width: 105px; height: 31px; left: 485.63px; top: 120.69px; position: absolute; color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word">
+        9:55 am</div>
+      <div class="Frame94"
+        style="height: 32px; padding-left: 23px; padding-right: 13px; left: 675.32px; top: 75.10px; position: absolute; border-radius: 28px; overflow: hidden; border: 0.50px #FF63CE solid; justify-content: flex-end; align-items: center; display: inline-flex">
+        <div class="Best" style="width: 91px; height: 32px"><span
+            style="color: white; font-size: 27px; font-family: Poppins; font-weight: 600; word-wrap: break-word">BEST
+          </span><span
+            style="color: white; font-size: 27px; font-family: Ponnala; font-weight: 400; word-wrap: break-word">*</span>
+        </div>
+      </div>
+      <div class="45Hrs"
+        style="width: 106px; height: 31px; left: 290.43px; top: 121.25px; position: absolute; color: rgba(255, 255, 255, 0.72); font-size: 20px; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+        0:45 hrs</div>
+      <div class="Line3"
+        style="width: 90px; height: 0px; left: 181.67px; top: 137.56px; position: absolute; border: 0.50px #D643BF solid">
+      </div>
+      <div class="Line4"
+        style="width: 90px; height: 0px; left: 371.67px; top: 137.01px; position: absolute; border: 0.50px #D643BF solid">
+      </div>
+      <div class="Change"
+        style="width: 95px; height: 31px; left: 285.48px; top: 143.27px; position: absolute; color: rgba(255, 255, 255, 0.72); font-size: 20px; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+        1 Change</div>
+      <div class="NeckerstadWest"
+        style="width: 180px; left: 42.76px; top: 154.90px; position: absolute; text-align: center; color: rgba(255, 255, 255, 0.81); font-size: 1.8rem; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+        Neckerstad<br /> West</div>
+      <div class="SrhCampus"
+        style="width: 180px; left: 424.76px; top: 153.82px; position: absolute; text-align: center; color: rgba(255, 255, 255, 0.81); font-size: 1.8rem; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+        SRH Campus</div>
+      <div class="Tram"
+        style="width: 65px; height: 63px; left: 39.20px; top: 24.91px; position: absolute; background: rgba(255, 255, 255, 0.90); border-radius: 12px; overflow: hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="65" height="63" viewBox="0 0 65 63" fill="none">
+          <g clip-path="url(#clip0_57_4331)">
+            <path
+              d="M35.2082 13.125L37.2394 9.1875H46.0415V5.25H18.9582V9.1875H31.8228L29.7915 13.125C21.3144 13.3613 13.5415 15.0413 13.5415 22.3125V44.625C13.5415 48.5625 16.5478 51.7913 20.4478 52.3688L17.2248 55.4925C16.3582 56.3325 16.954 57.75 18.1728 57.75H21.1248C21.4769 57.75 21.829 57.6188 22.0728 57.3563L27.0832 52.5H37.9165L42.9269 57.3563C43.1707 57.5925 43.5228 57.75 43.8748 57.75H46.8269C48.0457 57.75 48.6415 56.3325 47.7748 55.5187L44.5519 52.395C48.4519 51.7912 51.4582 48.5625 51.4582 44.625V22.3125C51.4582 15.0413 43.6853 13.3613 35.2082 13.125ZM32.4998 48.5625C30.2519 48.5625 28.4373 46.8037 28.4373 44.625C28.4373 42.4463 30.2519 40.6875 32.4998 40.6875C34.7478 40.6875 36.5623 42.4463 36.5623 44.625C36.5623 46.8037 34.7478 48.5625 32.4998 48.5625ZM46.0415 36.75H18.9582V23.625H46.0415V36.75Z"
+              fill="black" />
+          </g>
+          <defs>
+            <clipPath id="clip0_57_4331">
+              <rect width="65" height="63" rx="12" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div class="00" style="width: 44.23px; height: 31px; left: 760.41px; top: 23.91px; position: absolute"><span
+          style="color: white; font-size: 23px; font-family: Poppins; font-weight: 400; word-wrap: break-word">.</span><span
+          style="color: #C211A1; font-size: 23px; font-family: Poppins; font-weight: 400; word-wrap: break-word">00</span>
+      </div>
+      <div
+        style="width: 29.83px; left: 696.39px; top: 21.07px; position: absolute; text-align: center; color: #C211A1; font-size: 36px; font-family: Poppins; font-weight: 600; letter-spacing: 1.08px; word-wrap: break-word">
+        €</div>
+      <div
+        style="width: 57.61px; height: 40px; left: 715.03px; top: 26.02px; position: absolute; text-align: center; color: #C211A1; font-size: 32px; font-family: Poppins; font-weight: 600; letter-spacing: 2.40px; word-wrap: break-word">
+        02</div>
+      <!-- Card-2 starts here -->
+      <div class="card_2">
+        <div class="Frame122"
+          style="width: 850.44px; height: 251.14px; position: relative; background: none, linear-gradient(0deg, #310159 0%, #310159 100%); border-radius: 18px; border: 0.50px rgba(255, 255, 255, 0.72) solid">
+          <a href="MoreDetails.html">
+            <div class="Frame93"
+              style="width: 39px; height: 32px; padding-left: 66px; padding-right: 66px; padding-top: 9px; padding-bottom: 9px; left: 655.82px; top: 180.20px; position: absolute; background: #C211A1; border-radius: 18px; justify-content: center; align-items: center; display: inline-flex">
+              <div class="MoreDetails"
+                style="color: white; font-size: 28px; font-family: Poppins; font-weight: 500; word-wrap: break-word">
+                Details
+              </div>
+          </a>
+        </div>
+        <div class="RnvStr"
+          style="width: 217px; height: 44px; left: 132.01px; top: 34.70px; position: absolute; color: white; font-size: 28px; font-family: Poppins; font-weight: 600; word-wrap: break-word">
+          RNV - STR </div>
+        <div class="10Am"
+          style="width: 96px; height: 31px; left: 90.64px; top: 121.78px; position: absolute; color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word">
+          9:10 am</div>
+        <div class="55Am"
+          style="width: 105px; height: 31px; left: 485.63px; top: 120.69px; position: absolute; color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word">
+          9:55 am</div>
+        <div class="45Hrs"
+          style="width: 106px; height: 31px; left: 290.43px; top: 121.25px; position: absolute; color: rgba(255, 255, 255, 0.72); font-size: 20px; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+          0:45 hrs</div>
+        <div class="Line3"
+          style="width: 90px; height: 0px; left: 181.67px; top: 137.56px; position: absolute; border: 0.50px #D643BF solid">
+        </div>
+        <div class="Line4"
+          style="width: 90px; height: 0px; left: 371.67px; top: 137.01px; position: absolute; border: 0.50px #D643BF solid">
+        </div>
+        <div class="Change"
+          style="width: 95px; height: 31px; left: 285.48px; top: 143.27px; position: absolute; color: rgba(255, 255, 255, 0.72); font-size: 20px; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+          1 Change</div>
+        <div class="NeckerstadWest"
+          style="width: 180px; left: 42.76px; top: 154.90px; position: absolute; text-align: center; color: rgba(255, 255, 255, 0.81); font-size: 1.8rem; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+          Neckerstad<br /> West</div>
+        <div class="SrhCampus"
+          style="width: 180px; left: 424.76px; top: 153.82px; position: absolute; text-align: center; color: rgba(255, 255, 255, 0.81); font-size: 1.8rem; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+          SRH Campus</div>
+        <div class="Tram"
+          style="width: 65px; height: 63px; left: 39.20px; top: 24.91px; position: absolute; background: rgba(255, 255, 255, 0.90); border-radius: 12px; overflow: hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" width="65" height="63" viewBox="0 0 65 63" fill="none">
+            <g clip-path="url(#clip0_57_4331)">
+              <path
+                d="M35.2082 13.125L37.2394 9.1875H46.0415V5.25H18.9582V9.1875H31.8228L29.7915 13.125C21.3144 13.3613 13.5415 15.0413 13.5415 22.3125V44.625C13.5415 48.5625 16.5478 51.7913 20.4478 52.3688L17.2248 55.4925C16.3582 56.3325 16.954 57.75 18.1728 57.75H21.1248C21.4769 57.75 21.829 57.6188 22.0728 57.3563L27.0832 52.5H37.9165L42.9269 57.3563C43.1707 57.5925 43.5228 57.75 43.8748 57.75H46.8269C48.0457 57.75 48.6415 56.3325 47.7748 55.5187L44.5519 52.395C48.4519 51.7912 51.4582 48.5625 51.4582 44.625V22.3125C51.4582 15.0413 43.6853 13.3613 35.2082 13.125ZM32.4998 48.5625C30.2519 48.5625 28.4373 46.8037 28.4373 44.625C28.4373 42.4463 30.2519 40.6875 32.4998 40.6875C34.7478 40.6875 36.5623 42.4463 36.5623 44.625C36.5623 46.8037 34.7478 48.5625 32.4998 48.5625ZM46.0415 36.75H18.9582V23.625H46.0415V36.75Z"
+                fill="black" />
+            </g>
+            <defs>
+              <clipPath id="clip0_57_4331">
+                <rect width="65" height="63" rx="12" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div class="00" style="width: 44.23px; height: 31px; left: 760.41px; top: 23.91px; position: absolute"><span
+            style="color: white; font-size: 23px; font-family: Poppins; font-weight: 400; word-wrap: break-word">.</span><span
+            style="color: #C211A1; font-size: 23px; font-family: Poppins; font-weight: 400; word-wrap: break-word">00</span>
+        </div>
+        <div
+          style="width: 29.83px; left: 696.39px; top: 21.07px; position: absolute; text-align: center; color: #C211A1; font-size: 36px; font-family: Poppins; font-weight: 600; letter-spacing: 1.08px; word-wrap: break-word">
+          €</div>
+        <div
+          style="width: 57.61px; height: 40px; left: 715.03px; top: 26.02px; position: absolute; text-align: center; color: #C211A1; font-size: 32px; font-family: Poppins; font-weight: 600; letter-spacing: 2.40px; word-wrap: break-word">
+          02</div>
+      </div>
+      <!-- Card-3 starts here -->
+      <div class="card_3">
+        <div class="Frame122"
+          style="width: 850.44px; height: 251.14px; position: relative; background: none, linear-gradient(0deg, #310159 0%, #310159 100%); border-radius: 18px; border: 0.50px rgba(255, 255, 255, 0.72) solid">
+          <a href="MoreDetails.html">
+            <div class="Frame93"
+              style="width: 39px; height: 32px; padding-left: 66px; padding-right: 66px; padding-top: 9px; padding-bottom: 9px; left: 655.82px; top: 180.20px; position: absolute; background: #C211A1; border-radius: 18px; justify-content: center; align-items: center; display: inline-flex">
+              <div class="MoreDetails"
+                style="color: white; font-size: 28px; font-family: Poppins; font-weight: 500; word-wrap: break-word">
+                Details
+              </div>
+          </a>
+        </div>
+        <div class="RnvStr"
+          style="width: 217px; height: 44px; left: 132.01px; top: 34.70px; position: absolute; color: white; font-size: 28px; font-family: Poppins; font-weight: 600; word-wrap: break-word">
+          RNV - STR </div>
+        <div class="10Am"
+          style="width: 96px; height: 31px; left: 90.64px; top: 121.78px; position: absolute; color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word">
+          9:10 am</div>
+        <div class="55Am"
+          style="width: 105px; height: 31px; left: 485.63px; top: 120.69px; position: absolute; color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word">
+          9:55 am</div>
+        <div class="45Hrs"
+          style="width: 106px; height: 31px; left: 290.43px; top: 121.25px; position: absolute; color: rgba(255, 255, 255, 0.72); font-size: 20px; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+          0:45 hrs</div>
+        <div class="Line3"
+          style="width: 90px; height: 0px; left: 181.67px; top: 137.56px; position: absolute; border: 0.50px #D643BF solid">
+        </div>
+        <div class="Line4"
+          style="width: 90px; height: 0px; left: 371.67px; top: 137.01px; position: absolute; border: 0.50px #D643BF solid">
+        </div>
+        <div class="Change"
+          style="width: 95px; height: 31px; left: 285.48px; top: 143.27px; position: absolute; color: rgba(255, 255, 255, 0.72); font-size: 20px; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+          1 Change</div>
+        <div class="NeckerstadWest"
+          style="width: 180px; left: 42.76px; top: 154.90px; position: absolute; text-align: center; color: rgba(255, 255, 255, 0.81); font-size: 1.8rem; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+          Neckerstad<br /> West</div>
+        <div class="SrhCampus"
+          style="width: 180px; left: 424.76px; top: 153.82px; position: absolute; text-align: center; color: rgba(255, 255, 255, 0.81); font-size: 1.8rem; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+          SRH Campus</div>
+        <div class="Tram"
+          style="width: 65px; height: 63px; left: 39.20px; top: 24.91px; position: absolute; background: rgba(255, 255, 255, 0.90); border-radius: 12px; overflow: hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" width="65" height="63" viewBox="0 0 65 63" fill="none">
+            <g clip-path="url(#clip0_57_4331)">
+              <path
+                d="M35.2082 13.125L37.2394 9.1875H46.0415V5.25H18.9582V9.1875H31.8228L29.7915 13.125C21.3144 13.3613 13.5415 15.0413 13.5415 22.3125V44.625C13.5415 48.5625 16.5478 51.7913 20.4478 52.3688L17.2248 55.4925C16.3582 56.3325 16.954 57.75 18.1728 57.75H21.1248C21.4769 57.75 21.829 57.6188 22.0728 57.3563L27.0832 52.5H37.9165L42.9269 57.3563C43.1707 57.5925 43.5228 57.75 43.8748 57.75H46.8269C48.0457 57.75 48.6415 56.3325 47.7748 55.5187L44.5519 52.395C48.4519 51.7912 51.4582 48.5625 51.4582 44.625V22.3125C51.4582 15.0413 43.6853 13.3613 35.2082 13.125ZM32.4998 48.5625C30.2519 48.5625 28.4373 46.8037 28.4373 44.625C28.4373 42.4463 30.2519 40.6875 32.4998 40.6875C34.7478 40.6875 36.5623 42.4463 36.5623 44.625C36.5623 46.8037 34.7478 48.5625 32.4998 48.5625ZM46.0415 36.75H18.9582V23.625H46.0415V36.75Z"
+                fill="black" />
+            </g>
+            <defs>
+              <clipPath id="clip0_57_4331">
+                <rect width="65" height="63" rx="12" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div class="00" style="width: 44.23px; height: 31px; left: 760.41px; top: 23.91px; position: absolute"><span
+            style="color: white; font-size: 23px; font-family: Poppins; font-weight: 400; word-wrap: break-word">.</span><span
+            style="color: #C211A1; font-size: 23px; font-family: Poppins; font-weight: 400; word-wrap: break-word">00</span>
+        </div>
+        <div
+          style="width: 29.83px; left: 696.39px; top: 21.07px; position: absolute; text-align: center; color: #C211A1; font-size: 36px; font-family: Poppins; font-weight: 600; letter-spacing: 1.08px; word-wrap: break-word">
+          €</div>
+        <div
+          style="width: 57.61px; height: 40px; left: 715.03px; top: 26.02px; position: absolute; text-align: center; color: #C211A1; font-size: 32px; font-family: Poppins; font-weight: 600; letter-spacing: 2.40px; word-wrap: break-word">
+          02</div>
+      </div>
+    </div>
+  </div>
+  <!-- Side menu :) ends here -->
+  <div class="textBelow">
+    <p>*Note:- Based on your selected search parameters, connections are presented.On the main page, you may customize
+      them. Then, if any further connections exist, they will be displayed to you.</p>
+  </div>
+  <button type="button" class="collapsible">What if I want to cancel my ride?</button>
+  <div class="content">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, illo, veniam ipsa totam beatae distinctio
+      consequuntur dolorum vero non ad deserunt, ea dicta labore debitis. Debitis sapiente voluptates deserunt veniam.
+    </p>
+  </div>
+  <button type="button" class="collapsible">Can I buy ticket for a month?</button>
+  <div class="content">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, illo, veniam ipsa totam beatae distinctio
+      consequuntur dolorum vero non ad deserunt, ea dicta labore debitis. Debitis sapiente voluptates deserunt veniam.
+    </p>
+  </div>
+
+  <!--Some JS for collapse button here -->
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

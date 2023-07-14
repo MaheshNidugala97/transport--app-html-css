@@ -1,0 +1,489 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/booking.details.styles.css">
+  <style>
+    body {
+      background: rgba(62.00000010430813, 7.000000057742, 99.00000169873238, 1);
+      max-width: 100%;
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+
+    @media (max-width: 900px) {
+
+      .image_logo {
+        left: 10px;
+      }
+
+      .image_go_route {
+        left: 100px;
+      }
+
+      .last_name {
+        left: 30px;
+        top: 105px
+      }
+
+      .passanger_details {
+        width: 390px;
+        height: 170px;
+        margin-left: 80px;
+      }
+
+      .div_contact {
+        width: 390px;
+        height: 170px;
+        margin-left: 80px;
+      }
+
+      .div_phone_number {
+        width: 304px;
+        height: 43px;
+        left: 30px;
+        top: 105px
+      }
+
+      .dropdown-content {
+        left: 120px;
+        top: 605px;
+        min-width: 300px;
+      }
+
+      .div_seat_reservation {
+        width: 390px;
+        height: 170px;
+        margin-left: 80px;
+      }
+
+      .div_choose_seat {
+        width: 330px;
+        height: 90px;
+      }
+
+      .div_right-arrow_image {
+        left: 290px;
+        top: 27px;
+      }
+
+      .div_add_luggage {
+        width: 390px;
+        height: 250px;
+        margin-left: 80px;
+      }
+
+      .div_add_more_baggage {
+        width: 330px;
+        height: 90px;
+
+      }
+
+      .div_image {
+        left: 0px;
+      }
+
+      .div_arrow_right_image {
+        left: 290px;
+        top: 27px;
+      }
+
+      .span_your_booking {
+        margin-left: 55px;
+        margin-top: 1005px;
+        font-size: 17px;
+      }
+
+      .div_booking_details {
+        margin-left: 80px;
+        margin-top: 1040px;
+        width: 390px;
+
+      }
+
+      .div_adults {
+        margin-left: 80px;
+        margin-top: 1140px;
+        width: 390px;
+      }
+
+      .horizantal_line {
+        width: 390px;
+      }
+
+      .span_euro {
+        left: 20px;
+      }
+
+      .div_total {
+        margin-left: 80px;
+        margin-top: 1180px;
+        width: 390px;
+      }
+
+      .span_total {
+        font-size: 17px;
+      }
+
+      .span_total_euro {
+        left: 20px;
+        font-size: 17px;
+      }
+
+      .div_voucher {
+        margin-left: 100px;
+        margin-top: 1220px;
+        width: 170px;
+      }
+
+      .button {
+        margin-left: 80px;
+        margin-top: 1260px;
+        width: 390px;
+        font-size: 15px;
+      }
+
+      .div_back {
+        left: 80px;
+      }
+
+      .div_add_extra_baggage {
+        width: 330px;
+        top: 218px
+      }
+
+      .add-luggage-section {
+        height: 330px;
+
+      }
+
+      .add-more-baggage-section {
+        border-top: 1px solid rgba(255, 255, 255, 1);
+        border-left: 1px solid rgba(255, 255, 255, 1);
+        border-right: 1px solid rgba(255, 255, 255, 1);
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+
+      .change_to_down_arrow {
+        background-image: url(../images/down_arrow_one.png);
+      }
+
+      .align_span_your_booking {
+        margin-top: 1030px;
+      }
+
+      .align_booking_details {
+        margin-top: 1070px;
+      }
+
+      .align_adults {
+        margin-top: 1180px;
+      }
+
+      .align_total {
+        margin-top: 1220px;
+      }
+
+      .align_voucher {
+        margin-top: 1260px;
+      }
+
+      .align_button {
+        margin-top: 1295px;
+      }
+
+      .span_expires {
+        left: 300px;
+      }
+
+      .span_timer {
+        left: 378px;
+      }
+
+      .span_minutes {
+        left: 430px
+      }
+
+      .footer {
+        margin-top: 1400px;
+
+      }
+
+
+      .crums-panel {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 10px;
+        background-color: rgba(62.00000010430813, 7.000000057742, 99.00000169873238, 1);
+      }
+
+      .crums-body {
+        padding: 45px 10px 0;
+        flex: 1;
+      }
+
+
+      .step {
+        box-sizing: border-box;
+        position: relative;
+        z-index: 1;
+        display: block;
+        width: 23px;
+        height: 25px;
+        margin-bottom: 30px;
+        border: 4px solid #fff;
+        border-radius: 50%;
+        background-color: #efefef;
+      }
+
+
+    }
+  </style>
+</head>
+
+<body id="id_body">
+  <div class=header>
+    <div class="image_logo"></div>
+    <div class="image_go_route"></div>
+    <div class=div_timer>
+      <span class="span_expires">Expires in </span>
+      <span id="ten-countdown" class="span_timer">10:00</span>
+      <span class="span_minutes">minutes</span>
+    </div>
+  </div>
+
+  <div class="crums-panel">
+    <div class="crums-body">
+      <div class="progress-bar">
+        <div class="step active"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class=div_back>
+    <a href="MoreDetails.html">
+      <div class="image_back_arrow">
+      </div>
+    </a><span class="span_back">Back</span>
+  </div>
+
+
+  <div class=passanger_details>
+    <div class=last_name><span class="span_last_name">Last name </span>
+      <div class="last_name_hover"> <a><input type="text" class="text_field_last_name" id="lastName"
+            name="lastName"></a></div>
+    </div>
+    <div class=first_name><span class="span_first_name">First name </span>
+      <div class="first_name_hover">
+        <a> <input type="text" class="text_field_first_name" id="fistName" name="firstName"></a>
+      </div>
+    </div>
+    <div class=div_passenger_details>
+      <div class="div_one"></div><span class="span_one">1</span>
+    </div><span class="div_passengers">Passengers</span>
+  </div>
+
+  <div class=div_contact>
+    <div class=div_phone_number><span class="span_phone_number">Phone number </span>
+      <div class="div_country">
+        <div class="div_country_flag"></div>
+        <div class="div_down_arrow" onclick="dropdownFunction()"></div>
+      </div>
+      <div class="phone_number_hover"><a> <input type="text" class="text_field_phone_number" value="+49"
+            id="phonenumber" name=""></a>
+      </div>
+    </div>
+    <div class=div_email><span class="span_email">E-mail </span>
+      <div class="email_hover"><a><input type="text" class="text_field_email" id="email" name=""></a></div>
+    </div>
+    <div class=div_contact_text>
+      <div class="contact_text"></div><span class="span_contact_text">2
+      </span>
+    </div><span class="text_contact">Contact</span>
+  </div>
+  <div class="dropdown">
+    <div id="dropdown-countrycode" class="dropdown-content">
+      <a href="#india" class="india">India</a>
+      <a href="#uk" class="uk">UK</a>
+      <a href="#china" class="china">China</a>
+      <a href="#germany" class="germany">Germany</a>
+    </div>
+  </div>
+
+  <div class=div_seat_reservation>
+    <div class=seat_reservation>
+      <div class="div_three"></div><span class="span_three">3</span>
+    </div> <span class="span_seat_reservation">Seat Reservation</span>
+    <div class="seat_reservation_hover">
+      <a>
+        <div class=div_choose_seat>
+          <span class="choose_seat">Choose your seat</span>
+          <span class="euro">from €1.15 </span>
+          <div class="div_right-arrow_image" onclick="openNav()"></div>
+          <div class="div_seat_image"></div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div id="id_add_luggage" class=div_add_luggage>
+    <div class=div_four>
+      <div class="four"></div><span class="span_four">4</span>
+    </div>
+    <span class="span_extras">Extras</span>
+    <div class="add_more_luggage_hover">
+      <a>
+        <div id="id_add_more_baggage" class=div_add_more_baggage>
+          <span class="span_add_more_baggage">Add more baggage</span>
+          <span class="span_from">from €2.50 </span>
+          <div class="div_add_image"></div>
+          <div id="id_arrow_right_image" class="div_arrow_right_image" onclick="openAddLuggage()"></div>
+        </div>
+      </a>
+    </div>
+
+    <div id="id_extra_luggage" class=div_add_extra_baggage>
+      <span class="span_extra_baggage">Extra Baggage</span>
+      <span class="span_20_kg">20kg . 80*50*30cm</span>
+      <div class="div_luggage_image"></div>
+      <div class=div_button_add>
+        <div class="button_add"></div>
+      </div>
+      <input type="text" class="text_field_luggage_number" value="0" id="luggage_number" name="" readonly>
+      <div class=div_button_delete>
+        <div class="button_delete"></div>
+      </div>
+      <span class="span_baggage_cost">+ €2.50 </span>
+    </div>
+
+    <div class="div_included_luggage">
+      <div class="div_image"></div>
+      <div class="div_image_briefcase"></div>
+    </div><span class="include_per_person">Included per person</span><span class="span_7kg">1 hand luggage | 7kg .
+      42*30*18cm
+    </span><span class="span_20kg">1 luggage | 20kg . 80*50*30cm </span>
+  </div>
+
+  <span id="id_span_your_booking" class="span_your_booking">Your booking</span>
+
+  <div id="id_booking_details" class=div_booking_details>
+    <div class="div_date_time">
+      <span class="span_date_from">Thu, 29 Jun</span>
+      <span class="span_date_to"> Fri, 30 Jun</span>
+      <div class="arrow_image_right"></div>
+    </div>
+    <div class="div_city">
+      <span class="span_time_from">15:00 </span>
+      <span class="span_time_to">22:20 </span>
+      <span class="city_name_from">Berlin</span>
+      <span class="city_name_to"> Munich </span>
+      <div class=image_dest></div>
+    </div>
+  </div>
+
+  <div id="id_adults" class=div_adults>
+    <span class="span_adult"> 1 Adult </span>
+    <span class="span_euro"> €49.99 </span>
+    <div class="horizantal_line">
+      <hr>
+    </div>
+  </div>
+
+  <div id="id_total" class=div_total>
+    <span class="span_total"> Total(incl.VAT) </span>
+    <span class="span_total_euro"> €49.99 </span>
+  </div>
+
+  <div id="id_voucher" class=div_voucher>
+    <span class="span_redeem_voucher">redeem voucher</span>
+    <div class="voucher_image"></div>
+    <div class="voucher_down_arrow_image"></div>
+  </div>
+
+  <div><a href="Payment.html"><button id=" id_button" class="button">Confirm Booking</button></a></div>
+
+  <!--    side bar   -->
+
+  <div id="mySidebar" class="sidebar">
+    <span class="span_seat_reservation">Seat Reservation</span>
+    <span class="span_berlin_to_munich">Berlin to Munich</span>
+    <div class="div_lower_deck">
+      <span class="span_lower_deck">Lower deck</span>
+    </div>
+    <div class="div_upper_deck">
+      <span class="span_upper_deck">Upper deck</span>
+    </div>
+    <div class="div_seat_layout">
+      <div class="steering"></div>
+      <div class=seat_layout_left>
+        <div class="seat_l11"></div>
+        <div class="seat_l12"></div>
+        <div class="seat_l21"></div>
+        <div class="seat_l22"></div>
+        <div class="seat_l31"></div>
+        <div class="seat_l32"></div>
+        <div class="seat_l41"></div>
+        <div class="seat_l42"></div>
+        <div class="seat_l51"></div>
+        <div class="seat_l52"></div>
+        <div class="seat_l61"></div>
+        <div class="seat_l62"></div>
+        <div class="seat_l71"></div>
+        <div class="seat_l72"></div>
+        <div class="seat_l81"></div>
+        <div class="seat_l82"></div>
+        <div class="seat_l91"></div>
+        <div class="seat_l92"></div>
+      </div>
+
+      <div class=seat_layout_right>
+        <div class="seat_r11"></div>
+        <div class="seat_r12"></div>
+        <div class="seat_r21"></div>
+        <div class="seat_r22"></div>
+        <div class="seat_r31"></div>
+        <div class="seat_r32"></div>
+        <div class="seat_r41"></div>
+        <div class="seat_r42"></div>
+        <div class="seat_r51"></div>
+        <div class="seat_r52"></div>
+        <div class="seat_r61"></div>
+        <div class="seat_r62"></div>
+        <div class="seat_r71"></div>
+        <div class="seat_r72"></div>
+        <div class="seat_r81"></div>
+        <div class="seat_r82"></div>
+        <div class="seat_r91"></div>
+        <div class="seat_r92"></div>
+      </div>
+
+    </div>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  </div>
+
+  <!--    -->
+
+
+  <footer class=footer>
+    <div class="footer_contents">
+      <a href="privacy policy"><span>&nbsp; &nbsp;Privacy Policy</span></a>
+      <a href="passanger_rights"> <span>&nbsp;&nbsp;Passanger Rights</span></a>
+      <a href="legal_notice"> <span>&nbsp;&nbsp; Legal Notice</span></a>
+      <a href="goRoute"> <span>&nbsp; &nbsp; &nbsp; @2023 GoRoute</span></a>
+    </div>
+  </footer>
+  <script type="text/javascript" src="../javascript/services.js">
+
+  </script>
+</body>
+
+</html>
